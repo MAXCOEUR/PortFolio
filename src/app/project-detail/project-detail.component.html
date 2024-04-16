@@ -1,0 +1,24 @@
+<div class="information-container">
+  <div class="information-logo">
+    <img [src]="project.logo" alt="logo logiciel">
+  </div>
+  <div class="information-titre">
+    <h2>{{project.name}}</h2>
+    <p>{{project.shortDescription}}</p>
+  </div>
+  <ul class="information-url">
+    <li *ngFor="let url of project.url">
+      <a [href]="url.url">{{url.label}}</a>
+    </li>
+  </ul>
+</div>
+<div class="images-container">
+  <article class="image-item" *ngFor="let imageDesc of project.descriptions; let i=index" [class.imageLeft]="i % 2 === 0" [class.imageRight]="i % 2 !== 0">
+    <div class="partImage">
+      <img [src]="imageDesc.image" alt="">
+    </div>
+    <div class="partText">
+      <p>{{imageDesc.description}}</p>
+    </div>
+  </article>
+</div>
