@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  titre = "COEUR Maxence";
+  titre = "Maxence COEUR";
   showMenu = false;
   constructor(private router: Router){}
 

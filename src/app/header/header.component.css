@@ -17,7 +17,7 @@ header {
 #imagesProfil {
   height: 150px;
   object-fit: contain;
-  border-radius: 150px;
+  border-radius: 10px;
 }
 
 .logo {
@@ -26,8 +26,11 @@ header {
   align-items: center;
   cursor: pointer;
   overflow: hidden;
+  transition: transform 0.3s;
 }
-
+.logo:hover{
+  transform: scale(1.05);
+}
 
 .logo img {
   object-fit: contain;
@@ -55,9 +58,11 @@ nav li {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 
 nav li:hover {
+  transform: scale(1.05);
   background-color: var(--color-highlight);
   color: var(--color-text-secondary);
 }
