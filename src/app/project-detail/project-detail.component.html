@@ -7,9 +7,7 @@
     <p>{{project.shortDescription}}</p>
   </div>
   <ul class="information-url">
-    <li *ngFor="let url of project.url">
-      <a [href]="url.url">{{url.label}}</a>
-    </li>
+    <a *ngFor="let url of project.url" [href]="url.url">{{url.label}}</a>
   </ul>
 </div>
 <div class="images-container">

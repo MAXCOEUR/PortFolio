@@ -20,15 +20,19 @@ export class HeaderComponent implements OnInit {
   }
   moveHome() {
     this.router.navigate(['/home']);
+    this.showMenu = false;
   }
   moveAboutMe() {
     this.router.navigate(['/about-me']);
+    this.showMenu = false;
   }
   moveProject() {
     this.router.navigate(['/project']);
+    this.showMenu = false;
   }
   moveWorkExperience() {
     this.router.navigate(['/work-experience']);
+    this.showMenu = false;
   }
 
 }

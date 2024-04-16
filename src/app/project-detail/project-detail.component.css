@@ -1,142 +1,156 @@
 .images-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.imageLeft>.partImage {
-    order: 1;
+.imageLeft > .partImage {
+  order: 1;
 }
 
-.imageRight>.partImage {
-    order: 2;
+.imageRight > .partImage {
+  order: 2;
 }
 
-.imageLeft>.partText {
-    order: 2;
+.imageLeft > .partText {
+  order: 2;
 }
 
-.imageRight>.partText {
-    order: 1;
+.imageRight > .partText {
+  order: 1;
 }
 
 .partImage {
-    flex: 2;
+  flex: 2;
+
+}
+.partImage > img{
+  max-height: 500px;
+  object-fit: contain;
 }
 
 .partText {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 10px 20px 10px;
-    text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px 20px 10px;
+  text-align: center;
 }
 
 .image-item img {
-    width: 100%;
+  width: 100%;
 }
 
 .imageLeft {
-    background-color: var(--color-primaryContainer);
+  background-color: var(--color-primaryContainer);
 }
 
 .imageRight {
-    background-color: var(--color-surface);
+  background-color: var(--color-surface);
 }
 
 .information-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
 }
 
 .information-logo {
-    flex: 1;
-    min-width: 150px;
-    max-width: 400px;
-    max-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 5px;
+  flex: 1;
+  min-width: 150px;
+  max-width: 400px;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
 }
 
 .information-titre {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 5px;
-    color: var(--color-text-primary);
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  color: var(--color-text-primary);
 }
 
 .information-titre h2 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .information-titre p {
-    padding: 10px 0;
+  padding: 10px 0;
 }
-
 
 .information-url {
-    flex: 0;
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 200px;
-    text-align: center;
-    padding: 5px;
-    min-width: 150px;
-    max-width: 400px;
+  flex: 0;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 200px;
+  text-align: center;
+  padding: 5px;
+  min-width: 150px;
+  max-width: 400px;
 }
 
-.information-url li {
-    padding: 5px;
+.information-url a {
+  padding: 5px;
+  border-radius: 15px;
+  text-decoration: none;
+  margin: 5px;
+  background-color: var(--color-highlight);
+  color: var(--color-text-secondary);
 }
 
-.information-url li a {
-    color: var(--color-highlight);
-    text-decoration: none;
-}
-
-.information-url li a:hover {
-    color: var(--color-secondary);
-    text-decoration: none;
+.information-url a:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-text-primary);
+  text-decoration: none;
 }
 
 .information-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 700px) {
-    .image-item {
-        flex-direction: column;
-    }
+  .image-item {
+    flex-direction: column;
+  }
 
-    .imageLeft>.partImage {
-        order: 1;
-    }
+  .imageLeft > .partImage {
+    order: 1;
+  }
 
-    .imageRight>.partImage {
-        order: 1;
-    }
+  .imageRight > .partImage {
+    order: 1;
+  }
 
-    .partImage {
-        width: 80%;
-        margin-top: 20px;
-    }
+  .partImage {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .information-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .information-logo {
+    flex: none;
+    height: 150px;
+    width: 500px;
+  }
 }
