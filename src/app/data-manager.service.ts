@@ -11,7 +11,7 @@ export class DataManagerService {
   constructor() {
     this.projects = [
       new ProjectModel("BillAR","Le projet billA.R, est un système d'assistance pour le célèbre jeu du billard. Il permet la détection des billes et"+
-        "des queues, afin de créer et d'afficher la trajectoire pour aider le joueur à réaliser son coup.",
+        " des queues, afin de créer et d'afficher la trajectoire pour aider le joueur à réaliser son coup.",
          "assets/project/BillAR/logo.png",
          [
           new UrlWithLabel("github","https://github.com/MAXCOEUR/sae_billard"),
