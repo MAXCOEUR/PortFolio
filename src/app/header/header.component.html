@@ -1,0 +1,20 @@
+<header>
+  <div class="logo" (click)="moveHome()">
+      <img src="assets/crop me.jpg" alt="" id="imagesProfil">
+  </div>
+  <h1 id="titre">{{ titre }}</h1>
+  <nav [ngClass]="{ 'open': showMenu }">
+      <ul>
+          <li (click)="moveHome()">Accueil</li>
+          <li (click)="moveAboutMe()">A propos de moi</li>
+          <li (click)="moveProject()">Projet</li>
+          <li (click)="moveEducationBackgroud()">Scolaire</li>
+          <li (click)="moveWorkExperience()">Expérience Professionnel</li>
+      </ul>
+      <button class="hamburger-menu" (click)="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+  </nav>
+</header>

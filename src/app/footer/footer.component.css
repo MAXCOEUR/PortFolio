@@ -1,0 +1,27 @@
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+a {
+  color: #fff;
+}
+
+.imageIcon{
+  width: 50px;
+}
+.social-icons {
+  margin: 1rem;
+  list-style: none; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
