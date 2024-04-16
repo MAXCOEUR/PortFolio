@@ -1,3 +1,8 @@
-<p>
-  project works!
-</p>
+<div class="project-container">
+  <article class="project-card" *ngFor="let project of projects" (click)="onClickProject(project)">
+    <img [src]="project.logo" alt="{{ project.shortDescription }}">
+    <div class="project-info">
+      <h3>{{ project.name }}</h3>
+    </div>
+  </article>
+</div>

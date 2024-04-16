@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { EducationalBackgroundComponent } from './educational-background/educational-background.component';
 import { ProjectComponent } from './project/project.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 const routes: Routes = [
   {
@@ -16,16 +16,16 @@ const routes: Routes = [
     component:AboutMeComponent
   },
   {
-    path:'education-backgroud'
-    ,component:EducationalBackgroundComponent
-  },
-  {
     path:'project'
     ,component:ProjectComponent
   },
   {
     path: 'work-experience'
     , component: WorkExperienceComponent
+  },
+  { 
+    path: 'project/:id',
+    component: ProjectDetailComponent 
   },
 
   {path:'**',redirectTo:''}

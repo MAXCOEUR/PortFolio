@@ -27,9 +27,6 @@ export class HeaderComponent implements OnInit {
   moveProject() {
     this.router.navigate(['/project']);
   }
-  moveEducationBackgroud() {
-    this.router.navigate(['/education-backgroud']);
-  }
   moveWorkExperience() {
     this.router.navigate(['/work-experience']);
   }
