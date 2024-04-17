@@ -6,9 +6,8 @@
   <nav [ngClass]="{ 'open': showMenu }">
       <ul>
           <li (click)="moveHome()">Accueil</li>
-          <li (click)="moveAboutMe()">A propos de moi</li>
           <li (click)="moveProject()">Projet</li>
-          <li (click)="moveWorkExperience()">Expérience Professionnel</li>
+          <li (click)="moveExperience()">Expérience</li>
       </ul>
       <button class="hamburger-menu" (click)="toggleMenu()">
           <span></span>

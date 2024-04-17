@@ -30,8 +30,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/project']);
     this.showMenu = false;
   }
-  moveWorkExperience() {
-    this.router.navigate(['/work-experience']);
+  moveExperience() {
+    this.router.navigate(['/experience']);
     this.showMenu = false;
   }
 

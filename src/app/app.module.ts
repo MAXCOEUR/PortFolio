@@ -5,11 +5,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectComponent } from './project/project.component';
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +17,11 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
     HomeComponent,
     AboutMeComponent,
     ProjectComponent,
-    WorkExperienceComponent,
+    ExperienceComponent,
     HeaderComponent,
     FooterComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

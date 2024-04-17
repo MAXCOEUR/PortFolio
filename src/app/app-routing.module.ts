@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectComponent } from './project/project.component';
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 const routes: Routes = [
   {
@@ -20,8 +20,8 @@ const routes: Routes = [
     ,component:ProjectComponent
   },
   {
-    path: 'work-experience'
-    , component: WorkExperienceComponent
+    path: 'experience'
+    , component: ExperienceComponent
   },
   { 
     path: 'project/:id',
