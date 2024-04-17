@@ -180,7 +180,7 @@ export class DataManagerService {
       ),
       new ScoolExperienceModel(
         "assets/experience/scool/lyon1.png",
-        "Universite Claude Cernard Lyon 1",
+        "Universite Claude Bernard Lyon 1",
         "2021 - 2024",
         "IUT Bourg en Bresse",
         "BUT informatique",
@@ -191,7 +191,7 @@ export class DataManagerService {
         "Lycee René Cassin",
         "2018 - 2021",
         "Mâcon",
-        "BAC Général spécialité MAthematique et numerique",
+        "BAC Général spécialité Mathématique et numérique",
         "mention : bien"
       ),
       new ScoolExperienceModel(
