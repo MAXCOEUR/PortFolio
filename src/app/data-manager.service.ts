@@ -1,12 +1,16 @@
 import { Injectable } from '@angular/core';
 import { ImageWithDescription, ProjectModel, UrlWithLabel } from './model/project-model';
 import { forEach } from '@angular/router/src/utils/collection';
+import { WorkExperienceModel, WorkItemModel } from './model/work-experience-model';
+import { ScoolExperienceModel } from './model/scool-experience-model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataManagerService {
   private projects:ProjectModel[];
+  private workExperiences:WorkExperienceModel[];
+  private scoolExperiences:ScoolExperienceModel[];
 
   constructor() {
     this.projects = [
@@ -100,6 +104,105 @@ export class DataManagerService {
           new ImageWithDescription("assets/project/Patrick le Jeux/7.jpg", "Ce projet est une réalisation en solo utilisant le moteur Godot et le langage C#."),
         ]),
     ];
+
+
+
+    this.workExperiences = [
+      new WorkExperienceModel(
+        "assets/experience/work/declic.png",
+        "DECLIC Solution informatique",
+        "depuis avril 2023",
+        "Charnay-lès-Mâcon, Bourgogne-Franche-Comté, France",
+        [
+          new WorkItemModel(
+            "Développeur logiciel",
+            "Contrat en Alternance",
+            "septembre 2023 - aujourdhui",
+            "Je suis actuellement en alternance chez Déclic pour l'année scolaire 2023/2024, dans le cadre de la troisième année du BUT informatique. Mes missions comprennent : la réalisation de rapports sur Power BI pour les clients, mon intégration dans l'équipe de développement Windows, l'intégration de Power BI à la solution LogVin ERP ainsi que la réalisation de tâches sur la solution LogVin ERP. "
+          ),
+          new WorkItemModel(
+            "Développeur logiciel",
+            "CDD",
+            "juillet 2023 - août 2023",
+            "Le CDD est arrivé après le stage pour continuer le travail entamé pendant le stage. Durant ce CDD, j'ai découvert Angular."
+          ),
+          new WorkItemModel(
+            "Développeur logiciel",
+            "Stage",
+            "avril 2023 - juin 2023",
+            "Je suis arrivé chez Déclic dans le cadre du stage de deuxième année du BUT informatique. Mes missions comprenaient : Réaliser une application transférant des vues As400 en table SQL. Me former à Power BI. Créer des rapports Power BI."
+          ),
+        ]
+      ),
+      new WorkExperienceModel(
+        "assets/experience/work/monterrat.jpg",
+        "Maison Monterrat",
+        "2021 - 2022",
+        "Feillent, Rhône-Alpes Auvergne, France",
+        [
+          new WorkItemModel(
+            "Préparateur de commande",
+            "Intérimaire",
+            "juillet 2022 - juillet 2022",
+            "J'ai travaillé chez Maison Monterrat pour l'été en intérim, cette fois-ci en tant que préparateur de commandes. C'était beaucoup moins répétitif, et j'ai eu beaucoup plus d'interactions avec mes collègues. Une très bonne expérience."
+          ),
+          new WorkItemModel(
+            "Ouvrier agroalimentaire",
+            "Intérimaire",
+            "juillet 2021 - juillet 2021",
+            "J'ai travaillé en tant qu'intérimaire pendant 1 mois. C'était un travail dur mais enrichissant, très répétitif avec très peu d'interaction durant la journée de travail."
+          ),
+        ]
+      ),
+      new WorkExperienceModel(
+        "assets/experience/work/xefi.png",
+        "XEFI",
+        "2018",
+        "Charnay-lès-Mâcon, Bourgogne-Franche-Comté, France",
+        [
+          new WorkItemModel(
+            "Technicien réparation informatique",
+            "Stage",
+            "janvier 2018 - janvier 2018",
+            "J'ai effectué ce stage dans le cadre du stage de 3ème. Ce stage m'a plu et m'a conforté dans l'idée que je voulais continuer mes études dans l'informatique."
+          ),
+        ]
+      ),
+    ];
+    this.scoolExperiences =[
+      new ScoolExperienceModel(
+        "assets/experience/scool/ynov.png",
+        "Ynov",
+        "2024 - 2026",
+        "Lyon",
+        "Mastère Expert en développement Logiciel, Mobile & IOT",
+        ""
+      ),
+      new ScoolExperienceModel(
+        "assets/experience/scool/lyon1.png",
+        "Universite Claude Cernard Lyon 1",
+        "2021 - 2024",
+        "IUT Bourg en Bresse",
+        "BUT informatique",
+        ""
+      ),
+      new ScoolExperienceModel(
+        "assets/experience/scool/lycee.png",
+        "Lycee René Cassin",
+        "2018 - 2021",
+        "Mâcon",
+        "BAC Général spécialité MAthematique et numerique",
+        "mention : bien"
+      ),
+      new ScoolExperienceModel(
+        "assets/experience/scool/college.jpg",
+        "College Roger Poulnard",
+        "2014 - 2018",
+        "Bagé-Dommartin, Bagé-la-ville",
+        "",
+        "mention : bien"
+      ),
+    ];
   }
 
   getProjects():ProjectModel[]{
@@ -112,5 +215,12 @@ export class DataManagerService {
       }
     }
     return null;
+  }
+
+  getWorkExperience():WorkExperienceModel[]{
+    return this.workExperiences;
+  }
+  getScoolExperience():ScoolExperienceModel[]{
+    return this.scoolExperiences;
   }
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DataManagerService } from '../data-manager.service';
+import { WorkExperienceModel } from '../model/work-experience-model';
+import { ScoolExperienceModel } from '../model/scool-experience-model';
 
 @Component({
   selector: 'app-experience',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
+  private workExperiences:WorkExperienceModel[];
+  private scoolExperiences:ScoolExperienceModel[];
+
+  constructor(private dataManager: DataManagerService) { }
 
   ngOnInit() {
+    this.workExperiences = this.dataManager.getWorkExperience();
+    this.scoolExperiences = this.dataManager.getScoolExperience();
   }
 
 }

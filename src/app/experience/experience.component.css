@@ -1,0 +1,89 @@
+
+.exp-composent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exp-composent *{
+    color: var(--color-text-secondary);
+}
+.exp-composent > div{
+    width: 70%;
+}
+.work-composent{
+    background-color: var(--color-surface);
+    border-radius: 25px;
+    padding: 0 20px 20px 20px;
+    margin: 20px 0;
+}
+.margin5{
+    margin: 5px;
+}
+.date{
+    color: gray;
+}
+.smallFont{
+    font-size: 12px;
+}
+.work-company{
+    
+}
+.work-company-description{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.company-logo > img{
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    max-width: 150px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+.scool-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.work-item {
+    display: flex;
+    align-items: stretch;
+}
+
+.line {
+    border-left: 1px solid var(--color-text-secondary);
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.point {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-highlight);
+    border: 1px solid var(--color-text-secondary);
+    border-radius: 50%;
+    margin-left: -17px;
+}
+
+.notline {
+    padding: 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.work-name{
+    padding-top: 20px;
+}
+.work-company-description{
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 600px){
+    .exp-composent > div{
+        width: 100%;
+    }
+}

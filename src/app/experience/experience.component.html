@@ -1,3 +1,52 @@
-<p>
-  experience works!
-</p>
+<div class="exp-composent">
+  <div>
+
+    
+    <div class="work-composent">
+      <div class="work-company" *ngFor="let workExp of workExperiences">
+        <div class="work-company-description">
+          <div class="company-logo">
+            <img [src]="workExp.logo" alt="logo">
+          </div>
+          <div class="company-description">
+            <h3 class="company-name margin5">{{workExp.companyName}}</h3>
+            <p class="date margin5">{{workExp.date}}</p>
+            <p class="smallFont margin5">{{workExp.address}}</p>
+          </div>
+        </div>
+        <div class="work-item" *ngFor="let workItem of workExp.workItems">
+          <div class="line">
+            <div class="point"></div>
+        </div>
+          <div class="notline">
+            <h4 class="work-name margin5">{{workItem.workName}}</h4>
+            <p class="work-contract smallFont margin5">{{workItem.workContract}}</p>
+            <p class="date margin5">{{workItem.date}}</p>
+            <p class="description margin5">{{workItem.description}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="work-composent">
+      <div class="work-item" *ngFor="let scool of scoolExperiences">
+        <div class="line">
+          <div class="point"></div>
+        </div>
+        <div class="company-logo scool-logo">
+          <img [src]="scool.logo" alt="logo">
+        </div>
+        <div class="notline">
+          <h4 class="work-name">{{scool.scoolName}}</h4>
+          <p class="work-contract smallFont margin5">{{scool.address}}</p>
+          <p class="date margin5">{{scool.date}}</p>
+          <p class="margin5">{{scool.diplome}}</p>
+          <p class="margin5">{{scool.mention}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
