@@ -1,14 +1,14 @@
 :root {
   --color-primary: #336daf;
-  --color-secondary: #ff5a5f; 
+  --color-secondary: #ff5a5f;
   --color-background: #2c2c2c;
-  --color-text-primary: #ffffff; 
-  --color-text-secondary: #000000; 
-  --color-highlight: #00d8ff; 
-  --color-accent: #ffc107; 
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #000000;
+  --color-highlight: #00d8ff;
+  --color-accent: #ffc107;
 
 
-  --color-surface: #c2c2c2; 
+  --color-surface: #c2c2c2;
   --color-primaryContainer: #71adf1;
 }
 
@@ -19,10 +19,11 @@
     padding: 0;
     margin: 0;
     color: var(--color-text-primary);
+    list-style: none;
   }
 html,app-root, body { height: 100%; }
-body { 
+body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     background-color: var(--color-background);
 }

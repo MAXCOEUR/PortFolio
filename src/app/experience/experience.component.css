@@ -89,6 +89,6 @@
 
 @media screen and (max-width: 600px){
     .exp-composent > div{
-        width: 100%;
+        width: 90%;
     }
 }

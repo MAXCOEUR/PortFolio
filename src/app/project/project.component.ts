@@ -17,9 +17,17 @@ export class ProjectComponent implements OnInit {
   ngOnInit() {
     this.projects=this.dataManager.getProjects();
   }
+  private movePage(param: string[]) {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Défilement fluide
+    });
+    this.router.navigate(param);
+  }
 
   onClickProject(project: ProjectModel) {
-    this.router.navigate(['/project', project.id]);
+    this.movePage(['/project', project.id.toString()]);
   }
+
 
 }

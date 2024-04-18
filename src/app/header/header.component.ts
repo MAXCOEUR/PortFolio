@@ -19,19 +19,24 @@ export class HeaderComponent implements OnInit {
     this.showMenu = !this.showMenu;
   }
   moveHome() {
-    this.router.navigate(['/home']);
-    this.showMenu = false;
+    this.movePage('/home');
   }
   moveAboutMe() {
-    this.router.navigate(['/about-me']);
-    this.showMenu = false;
+    this.movePage('/about-me');
   }
   moveProject() {
-    this.router.navigate(['/project']);
-    this.showMenu = false;
+    this.movePage('/project');
   }
   moveExperience() {
-    this.router.navigate(['/experience']);
+    this.movePage('/experience');
+  }
+
+  private movePage(url:String){
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Défilement fluide
+    });
+    this.router.navigate([url]);
     this.showMenu = false;
   }
 

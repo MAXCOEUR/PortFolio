@@ -1,17 +1,61 @@
-#about,
-#contact {
-    padding: 20px;
+#page-container {
+  width: 70%; /* Largeur de 600% */
+  margin: 0 auto; /* Auto-marge sur les côtés pour le centrage horizontal */
+}
+#page-container * {
+  color: var(--color-text-secondary);
+  text-align: center;
 }
 
-button {
-    background-color: #007bff;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
+
+.section{
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--color-surface);
+}
+.section h2{
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.text-me{
+  margin: 10px;
+}
+.image-me{
+  max-width: 500px;
+  width: 70%;
+  margin: 0 auto;
+  margin: 10px auto 40px auto;
+}
+.image-me > img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button{
+  background-color: var(--color-primary);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--color-text-primary) !important ;
+}
+.buttons button:hover{
+  color: var(--color-text-secondary)!important;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+  #page-container{
+      width: 90%;
+  }
+  .image-me{
+    width: 90%;
+  }
 }
