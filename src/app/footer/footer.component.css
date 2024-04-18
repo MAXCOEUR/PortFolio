@@ -18,9 +18,11 @@ a {
   width: 50px;
 }
 .social-icons {
-  margin: 1rem;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.container > *{
+  margin: 5px;
 }
