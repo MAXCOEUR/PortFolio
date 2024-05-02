@@ -33,7 +33,7 @@ export class DataManagerService {
          "assets/project/Pouic/logo.png",
          [
           new UrlWithLabel("github","https://github.com/MAXCOEUR/pouic_app"),
-          new UrlWithLabel("Téléchargement","https://github.com/MAXCOEUR/discution_app/releases/latest"),
+          new UrlWithLabel("Téléchargement","https://pouic-web-regles-confidentialit.vercel.app/"),
           new UrlWithLabel("regles de confidentialité","https://pouic-web-regles-confidentialit.vercel.app/"),
         ],
         [
