@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectComponent } from './project/project.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -15,7 +14,6 @@ import { ExperienceComponent } from './experience/experience.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutMeComponent,
     ProjectComponent,
     ExperienceComponent,
     HeaderComponent,

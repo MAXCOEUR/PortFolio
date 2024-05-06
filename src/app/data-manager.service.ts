@@ -50,7 +50,8 @@ export class DataManagerService {
         " villes de France. Les utilisateurs peuvent collectionner des cartes virtuelles de villes, chacune accompagnée de statistiques sur la ville.",
         "assets/project/City Card/logo.png",
         [
-          new UrlWithLabel("github","https://github.com/MAXCOEUR/citycards")
+          new UrlWithLabel("github","https://github.com/MAXCOEUR/citycards"),
+          new UrlWithLabel("Téléchargement","https://github.com/MAXCOEUR/citycards/releases/latest")
         ],
         [
           new ImageWithDescription("assets/project/City Card/1.jpg", "Introduction : CityCards est une application mobile développée en Kotlin qui permet aux utilisateurs de collectionner des cartes virtuelles représentant différentes villes de France. Dans ce document, nous allons vous guider à travers les aspects essentiels de notre projet."),
