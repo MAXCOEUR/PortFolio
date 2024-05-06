@@ -26,7 +26,7 @@ export class DataManagerService {
           new ImageWithDescription("assets/project/BillAR/2.png", "Aujourd'hui, nous plongeons dans l'entraînement du modèle, affinant ses capacités à repérer la boule et la queue avec précision. 🤯 Le mariage de la technologie, du billard et de l'IA ouvre des portes infinies pour des expériences de jeu immersives."),
           new ImageWithDescription("assets/project/BillAR/3.png", "Challenges passionnants, apprentissages constants - c'est le cœur de notre aventure Bill.A.R. 🌟 Hâte de vous tenir informés de nos progrès et de partager bientôt des séquences du Bill.A.R en action ! 🎬"),
           new ImageWithDescription("assets/project/BillAR/4.jpeg", "Rejoignez-nous Nikola CHEVALLIOT Hugo Millot et Maël Chalon dans cette aventure de fusion entre le réel et le virtuel ! 🌐"),
-          new ImageWithDescription("assets/project/BillAR/5.jpeg", "Ce projet a été réalisé dans le cadre de l'IUT avec comme tuteur Monsieur Telez. Les technologies utilisées sont Python, YOLO et OpenCV."),
+          new ImageWithDescription("assets/project/BillAR/5.jpeg", "Ce projet a été réalisé dans le cadre de l'IUT avec comme tuteur Monsieur Tellez. Les technologies utilisées sont Python, YOLO et OpenCV."),
         ]),
       new ProjectModel("Pouic","Pouic est une application de type réseau social qui permet aux utilisateurs d'échanger des messages privés, de publier "+
         "des posts similaires à ceux de Twitter et de partager des images quotidiennes, à l'instar de BeReal.",
