@@ -1,3 +1,8 @@
+#imagesProfil {
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10px;
+}
 header {
   position: relative;
   display: flex;
@@ -8,18 +13,9 @@ header {
   padding: 1rem;
   z-index: 100;
 }
-
 #titre {
   padding: 1rem;
-  white-space: nowrap;
 }
-
-#imagesProfil {
-  height: 150px;
-  object-fit: contain;
-  border-radius: 10px;
-}
-
 .logo {
   height: 150px;
   display: flex;
@@ -28,6 +24,7 @@ header {
   overflow: hidden;
   transition: transform 0.3s;
 }
+
 .logo:hover{
   transform: scale(1.05);
 }
@@ -109,8 +106,36 @@ nav.open .hamburger-menu span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -6px);
 }
 
+header nav.open li {
+  margin-bottom: 0.5rem;
+}
+header nav.open{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+header nav.open ul {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  padding-top: 75px;
+}
+header nav.open .hamburger-menu{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 /* Styles pour les petits écrans */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 750px) {
   header nav ul {
     display: none;
   }
@@ -119,19 +144,4 @@ nav.open .hamburger-menu span:nth-child(3) {
     display: block;
   }
 
-  header nav.open li {
-    margin-bottom: 0.5rem;
-  }
-
-  header nav.open ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 4rem;
-    left: 0;
-    right: 0;
-    background-color: #222;
-    padding: 1rem;
-    margin-top: 75px;
-  }
 }
